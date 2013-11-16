@@ -1,0 +1,128 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/opensans-light-webfont.eot');
+    src: url('fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-light-webfont.woff') format('woff'),
+         url('fonts/opensans-light-webfont.ttf') format('truetype'),
+         url('fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('fonts/opensans-semibold-webfont.eot');
+    src: url('fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('fonts/opensans-semibold-webfont.ttf') format('truetype'),
+         url('fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_condensedregular';
+    src: url('fonts/robotocondensed-regular-webfont.eot');
+    src: url('fonts/robotocondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/robotocondensed-regular-webfont.woff') format('woff'),
+         url('fonts/robotocondensed-regular-webfont.ttf') format('truetype'),
+         url('fonts/robotocondensed-regular-webfont.svg#roboto_condensedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
+
+// Override theme settings (see ../template/settings.scss)
+$heading1TextShadow: 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+$headingTextShadow: 0 2px 1px rgba(0,0,0,.1), 0 0 2px rgba(0,0,0,.1), 0 1px 1px rgba(0,0,0,.1), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.15), 0 10px 15px rgba(0,0,0,.15);
+$backgroundColor: #E1E1E1;
+$headingColor: #363636;
+$headingMargin: 0 0 50px 0;
+$mainColor: #595959;
+$linkColor: #fff;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal h1 {
+	font-size: 120px;
+}
+
+.reveal {
+
+	h2, h3, h4, h5 {
+		margin: 0px 0px 40px 0px;
+        line-height: 70px;
+	}
+
+    pre code {
+        max-height: 600px;
+    }
+
+    ul li {
+        margin-bottom: 20px;
+    }
+
+    .link-list div {
+        height: 100px;
+    }
+
+    .large-header {
+        margin-bottom: 80px;
+    }
+}
+
+.reveal .simple-image {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+.reveal a:link {
+	color: #fff;
+}
+
+body section {
+	.left {
+		display: inline-block;
+	}
+
+	.right {
+		display: inline-block;
+	}
+
+	a:link {
+		background: #85C12F;
+		padding: 20px;
+		color: #fff;
+	}
+
+	p {
+		display: inline-block;
+		padding: 20px !important;
+	}	
+}
+
+.footer {
+    bottom: 0;
+    left: 45%;
+    right:55%;
+    position: absolute;
+}
